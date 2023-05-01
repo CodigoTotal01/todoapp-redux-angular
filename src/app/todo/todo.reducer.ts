@@ -6,7 +6,6 @@ import {from} from "rxjs";
 const todo1 = new Todo('Vencer a Thanos');
 const todo2 = new Todo('Salvar a el mundo');
 
-
 //Estado de los todos
 const estadoInicial: Todo[] = [todo1, todo2]; // ahro ael estaod inicial tiene dos elementos
 export function todoReducer(state:Todo[] = estadoInicial,
