@@ -5,8 +5,7 @@ export const AGREGAR_TODO = '[TODO] Agregar todo';
 export class AgregarTodoAction implements Action{
   readonly type = AGREGAR_TODO;
   //informacion a enviar
-  constructor(public texto:string) {
-  }
+  constructor(public texto:string) {}
 }
 
 //Estructura de informacion personalizada

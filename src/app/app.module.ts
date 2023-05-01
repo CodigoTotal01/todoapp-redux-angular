@@ -5,6 +5,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import {Store, StoreModule} from "@ngrx/store";
 import {todoReducer} from "./todo/todo.reducer";
 
+//Forms
+import {ReactiveFormsModule} from "@angular/forms";
+
+
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { TodoComponent } from './todo/todo.component';
@@ -28,6 +32,7 @@ import {environment} from "../environments/environment.prod";
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     //Lo que me dio error, cuando tienes uno o mas reducer, ponle lo de lestado - app.reducers.ts y luego el reducer del todo
     // @ts-ignore
     StoreModule.forRoot({todos: todoReducer}),

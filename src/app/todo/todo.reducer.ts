@@ -2,8 +2,13 @@ import * as fromTodo from './todo.actions';
 import {Todo} from "./model/todo.model";
 import {from} from "rxjs";
 
-//Estado de los todd
-const estadoInicial: Todo[] = [];
+//informacion
+const todo1 = new Todo('Vencer a Thanos');
+const todo2 = new Todo('Salvar a el mundo');
+
+
+//Estado de los todos
+const estadoInicial: Todo[] = [todo1, todo2]; // ahro ael estaod inicial tiene dos elementos
 export function todoReducer(state:Todo[] = estadoInicial,
                             action: fromTodo.Actiones): Todo[]{
   switch (action.type){
