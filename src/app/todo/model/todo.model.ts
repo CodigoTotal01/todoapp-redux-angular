@@ -4,13 +4,13 @@ export class Todo{
   public completado: boolean;
 
   constructor(texto: string) {
-    this.texto = this.textoCapitalizar(texto);
+    this.texto = texto.charAt(0).toUpperCase() + texto.slice(1);
     this.completado = false;
     this.id = Math.random();
   }
 
-  textoCapitalizar(texto: string): string{
-    return texto.charAt(0).toUpperCase() + texto.slice(1);
-  }
+  // textoCapitalizar(texto: string): string{
+  //   return texto.charAt(0).toUpperCase() + texto.slice(1);
+  // }
 
 }
